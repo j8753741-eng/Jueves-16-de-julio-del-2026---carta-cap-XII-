@@ -4,14 +4,17 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
+<title>JUEVES 16 DE JULIO DEL 2026 - CARTA (CAP XII)</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
 
 <style>
 
@@ -21,292 +24,828 @@ padding:0;
 box-sizing:border-box;
 }
 
+
 body{
 
 background:
-radial-gradient(circle at top,#38281b 0%,#221811 45%,#140f0b 100%);
-
-font-family:'Cormorant Garamond',serif;
-
-display:flex;
-justify-content:center;
-align-items:center;
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
 
 min-height:100vh;
 
-padding:45px;
+font-family:'Cormorant Garamond',serif;
+
+padding:60px 20px;
+
+overflow-x:hidden;
 
 }
 
-.book-page{
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
+
+pointer-events:none;
+
+}
+
+
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
 
 position:relative;
 
-width:min(900px,100%);
+}
 
-padding:70px 70px 130px;
 
-background:
-linear-gradient(180deg,#f9f2e3,#f2e7cf,#ecdcc1);
+.cover-title{
 
-border:2px solid #c8ae7a;
+text-align:center;
 
-box-shadow:
-0 0 65px rgba(0,0,0,.55),
-inset 0 0 90px rgba(124,95,56,.12);
+font-family:'Cinzel',serif;
 
-overflow:hidden;
+font-size:2rem;
+
+color:#f7d98d;
+
+letter-spacing:3px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
 
 }
 
-.book-page::before{
+
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+
+.page::before{
 
 content:"";
 
 position:absolute;
 
-top:18px;
-left:18px;
-right:18px;
-bottom:18px;
+inset:0;
 
-border:1px solid rgba(149,112,62,.35);
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
 
 }
 
-.book-page::after{
 
-content:"❦";
+.corner{
 
 position:absolute;
 
-top:28px;
-right:30px;
+font-size:44px;
 
-font-size:30px;
+color:#b08a45;
 
-color:#b89e69;
-
-opacity:.45;
+opacity:.7;
 
 }
 
-.ornament{
+
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+
+
+.header{
 
 text-align:center;
 
-font-size:24px;
-
-letter-spacing:8px;
-
-color:#8d6842;
-
-margin-bottom:25px;
+margin-bottom:55px;
 
 }
 
-.book-title{
 
-text-align:center;
+.header h1{
 
-font-size:18px;
+font-family:'Cinzel',serif;
 
-letter-spacing:3px;
+font-size:2rem;
 
-text-transform:uppercase;
+line-height:1.5;
 
-color:#694b2b;
+color:#5b3213;
 
-margin-bottom:18px;
-
-}
-
-.chapter{
-
-text-align:center;
-
-font-size:34px;
-
-font-weight:600;
-
-letter-spacing:3px;
-
-color:#4d3520;
-
-margin-bottom:12px;
+margin-bottom:22px;
 
 }
+
 
 .date{
 
-text-align:center;
+font-size:1rem;
 
-font-size:17px;
+color:#7b5c2e;
 
 letter-spacing:1px;
 
-color:#7c5d37;
-
-margin-bottom:50px;
-
 }
 
-.content{
 
-border:1px dashed rgba(150,113,63,.45);
-
-background:rgba(255,255,255,.12);
-
-padding:45px 35px;
-
-text-align:center;
-
-line-height:2;
-
-font-size:22px;
-
-font-style:italic;
-
-color:#5a4127;
-
-}
-
-.content strong{
-
-font-size:24px;
-
-font-style:normal;
-
-}
-
-#countdown{
+.greeting{
 
 margin-top:35px;
 
-font-size:42px;
+font-family:'Cormorant Garamond',serif;
 
-font-weight:bold;
+font-size:3rem;
 
-letter-spacing:4px;
+color:#7b4323;
 
-color:#7a2d2d;
-
-}
-
-.count-text{
-
-margin-top:18px;
-
-font-size:18px;
-
-font-style:normal;
-
-color:#6d5130;
+margin-bottom:28px;
 
 }
 
-.status{
 
-margin-top:45px;
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
+}
+
+
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+
+strong{
+
+font-weight:700;
+
+}
+
+
+.divider{
 
 text-align:center;
 
-font-size:18px;
+font-size:26px;
 
-line-height:1.9;
+margin:35px 0;
+
+color:#9b7643;
+
+}
+
+
+.page-turn{
+
+margin:55px auto 25px;
+
+text-align:center;
+
+}
+
+
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
 
 font-style:italic;
 
-color:#6b4d2d;
-
 }
 
-.seal{
 
-margin:55px auto 0;
+.page-corner{
 
-width:78px;
+display:inline-flex;
 
-height:78px;
+align-items:center;
 
-border-radius:50%;
+justify-content:center;
 
-background:
-radial-gradient(circle at 30% 30%,#a43d3d,#6d1919 70%);
+width:170px;
 
-border:4px solid #d5b37a;
+height:70px;
 
-box-shadow:
-0 8px 15px rgba(0,0,0,.25),
-inset 0 0 12px rgba(255,255,255,.15);
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
 
-}
+border:2px solid #c9a36b;
 
-.page-number{
+text-decoration:none;
 
-position:absolute;
+color:#6b4725;
 
-bottom:28px;
+font-family:'Cinzel',serif;
 
-right:42px;
-
-font-size:17px;
+font-size:.9rem;
 
 letter-spacing:2px;
 
-color:#765737;
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
+
+transition:.35s;
+
+}
+
+
+.page-corner:hover{
+
+transform:translateY(-5px) rotate(-2deg);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
+
+}
+
+
+.page-corner span{
+
+padding:0 12px;
+
+text-align:center;
 
 }
 
 </style>
 
+
 </head>
+
 
 <body>
 
-<div class="book-page">
 
-<div class="ornament">
-✦ ❦ ✦ ❦ ✦ ❦ ✦
-</div>
+<div class="book">
 
-<div class="book-title">
+
+<div class="cover-title">
+
 ✦ Donde Siempre Vuelve Mi Corazón ✦
+
 </div>
 
-<div class="chapter">
-Capítulo XII
-</div>
 
-<div class="date">
-Jueves 16 de julio de 2026 • Noche
-</div>
+<div class="page">
 
-<div class="content">
 
-<strong>
-La tinta ya conoce la historia... solo espera que el tiempo le permita escribirla.
-</strong>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
+
+
+
+<div class="header">
+
+
+<h1>
+
+<strong>CAPÍTULO XII</strong>
 
 <br><br>
 
-Entre estas antiguas páginas permanece oculto el siguiente capítulo, aguardando el instante exacto para revelar una nueva noche de nuestro libro.
+<strong>
 
-<div id="countdown">
-00:00:00
+DONDE HASTA UNA CENA SENCILLA SE CONVIERTE EN UNA PROMESA DE AMOR
+
+</strong>
+
+
+</h1>
+
+
+<div class="date">
+
+<strong>Jueves, 16 de julio del 2026 – Noche</strong>
+
 </div>
 
-<div class="count-text">
-Cada segundo nos acerca a una nueva página escrita con amor.
-</div>
 
 </div>
 
-<div class="status">
-✦ Los capítulos más hermosos nunca llegan antes de tiempo; nacen exactamente cuando el corazón está listo para volver a latir. ✦
+
+
+<div class="greeting">
+
+MA BELLE FILLE:
+
 </div>
 
-<div class="seal"></div>
+
+
+<p class="first">
+
+Hay noches en las que las páginas de este viejo libro no se escriben con grandes acontecimientos, sino con pequeños detalles que terminan revelando los sentimientos más profundos del corazón. Esta noche no quiero guardar solamente un recuerdo de una jornada más; quiero conservar la historia de una noche donde una simple cena, un cansancio después del trabajo y un deseo imposible de abrazarte me recordaron una vez más cuánto significa para mí cuidar de ti.
+
+</p>
+
+
+
+<p>
+
+Hoy volviste a trabajar, mi amor, y mientras imaginaba cada momento de tu día, pensaba en todo lo que haces, en todo lo que entregas y en la fuerza con la que sigues adelante incluso cuando las cosas no son tan fáciles. Sé que muchas veces llegas cansada, que hay días donde tu cuerpo pide descanso y aun así sigues dando lo mejor de ti. Y aunque quisiera estar ahí para quitarte un poco de ese peso, la distancia todavía me obliga a quererte desde lejos.
+
+</p>
+
+
+
+<p>
+
+Me contaste que tu cena fueron aquellas dos empanadas que compraste cuando estábamos juntos. Me dio una ternura enorme imaginar que algo tan pequeño todavía llevaba un pedacito de ese momento compartido entre nosotros. Pero después me dijiste que una estaba medio buena y que la otra estaba realmente malísima, y aunque puede parecer una historia sencilla, dentro de mí despertó un sentimiento enorme.
+
+</p>
+
+
+<div class="divider">
+
+❦
+
+</div>
+
+<p>
+
+Porque en ese instante mi corazón no pensó solamente en la comida. Pensó en ti. Pensó en la mujer que amo teniendo que conformarse con algo que ni siquiera estaba rico después de un día de trabajo. Pensé en cómo habría sido poder estar ahí, mirarte a los ojos y decirte: "déjame cuidar de ti esta noche". No porque una cena pueda cambiar el mundo, sino porque para mí cada pequeño detalle que pueda hacerte sentir amada tiene un valor infinito.
+
+</p>
+
+
+<p>
+
+Cómo habría querido aparecer frente a ti con algo delicioso entre mis manos, con esa sonrisa que solamente nace cuando sé que voy a verte feliz. Habría querido sentarme contigo, acompañarte mientras comes, preguntarte si te gustó, escuchar tu respuesta y sentir esa tranquilidad que tendría al saber que por un momento no tienes que preocuparte por nada más.
+
+</p>
+
+
+<p>
+
+Me habría encantado ser quien te prepare una comida después de un día cansado. Quien te diga que descanses mientras yo me encargo de hacerte sonreír. Quien pueda abrazarte y recordarte que no tienes que ser fuerte todo el tiempo, porque también mereces tener un lugar donde puedas simplemente sentirte cuidada.
+
+</p>
+
+
+<p>
+
+Mi niña hermosa, quiero que nunca olvides algo: tú mereces amor en los detalles más pequeños. Mereces que alguien pregunte si ya comiste, si estás cansada, si necesitas algo o simplemente si quieres un abrazo. Mereces sentir que existe alguien que piensa en tu bienestar incluso cuando no puede estar físicamente a tu lado.
+
+</p>
+
+
+<div class="divider">
+
+❦
+
+</div>
+
+
+<p>
+
+A veces me duele no poder hacer todo lo que mi corazón quisiera. Me duele que mis manos no puedan llegar hasta donde estás cuando quiero ayudarte. Me duele que mis brazos no puedan reemplazar el cansancio de tus días largos. Pero aunque no pueda aparecer mágicamente a tu lado con una cena caliente, quiero que sepas que mi amor siempre encuentra una forma de acompañarte.
+
+</p>
+
+
+<p>
+
+Porque estoy contigo cuando trabajas. Estoy contigo cuando sonríes. Estoy contigo cuando tienes un día hermoso y también cuando un pequeño detalle logra hacerte sentir triste. Mi corazón no sabe quedarse lejos de ti, porque desde que llegaste a mi vida aprendió que su lugar favorito siempre será cerca del tuyo.
+
+</p>
+
+
+<p>
+
+Y algún día, cuando la vida nos permita compartir más momentos juntos, quiero que recordemos esta noche. Quiero que nos riamos pensando en aquellas empanadas, en una que estaba buena y en otra que casi parecía una prueba de paciencia. Quiero que sea una de esas historias pequeñas que terminan siendo enormes porque detrás de ellas estaba nuestro amor creciendo sin darnos cuenta.
+
+</p>
+
+
+<p>
+
+Quiero construir contigo esos momentos sencillos que después se convierten en los recuerdos más valiosos. Una cena después de un día difícil. Una conversación mientras la noche cae. Una mirada que diga "estoy aquí". Una mano buscando la otra sin necesidad de explicar nada.
+
+</p>
+
+
+<p>
+
+Porque aprendí que amar no siempre significa hacer cosas gigantes. Muchas veces amar es preocuparse por si la persona que amas ya comió. Es imaginar cómo fue su día. Es querer quitarle un poco de cansancio aunque no puedas hacerlo todavía. Es desear estar presente incluso en los momentos que parecen más normales.
+
+</p>
+
+
+<div class="divider">
+
+❦
+
+</div>
+
+
+<p>
+
+Esta noche quiero que cierres los ojos sabiendo que hay alguien que está orgulloso de ti. Alguien que admira tu esfuerzo, tu manera de seguir adelante y la persona tan maravillosa que eres. Puede que hoy no haya podido llevarte esa comida que quería darte, pero sí puedo entregarte algo que siempre estará contigo: la certeza de que mi corazón está intentando cuidarte incluso desde la distancia.
+
+</p>
+
+
+<p>
+
+No quiero que pienses solamente en una cena sencilla o en un día más de trabajo. Quiero que recuerdes que detrás de ese pequeño momento existe una historia mucho más grande: la historia de un hombre que ama profundamente a una mujer y que sueña con poder demostrarle cada día, con acciones y no solamente con palabras, que ella es una de las cosas más hermosas que le han pasado en la vida.
+
+</p>
+
+
+<p>
+
+Y mientras este viejo libro siga teniendo páginas por escribir, seguiré guardando estos pequeños instantes. Porque algún día miraremos atrás y entenderemos que incluso las noches donde solamente hubo cansancio, distancia y una cena imperfecta también fueron parte de la historia más bonita que construimos juntos.
+
+</p>
+
+<p>
+
+Mi amor, si algún día vuelves a sentir que las circunstancias nos ponen lejos, recuerda que la distancia solamente puede separar nuestras manos, pero jamás podrá separar todo aquello que hemos construido. Porque hay sentimientos que no necesitan estar frente a frente para existir; simplemente viven, crecen y permanecen dentro del corazón.
+
+</p>
+
+
+<p>
+
+Hoy este capítulo nació de dos empanadas, de una noche de trabajo y de un deseo que parece sencillo pero que para mí significa todo: poder cuidarte. Y quizá esa sea una de las formas más puras del amor, querer estar presente incluso cuando no tienes una solución perfecta, querer ayudar incluso cuando solo puedes ofrecer palabras y querer hacer feliz a alguien simplemente porque verla feliz también hace feliz a tu propia alma.
+
+</p>
+
+
+<p>
+
+Gracias por permitirme conocer cada parte de ti. Gracias por contarme tus días, tus cansancios, tus pequeñas historias y hasta esos detalles que quizás tú piensas que no tienen importancia. Para mí sí la tienen, porque cada cosa que viene de ti se convierte en una página que quiero guardar para siempre.
+
+</p>
+
+
+<p>
+
+Nunca olvides que detrás de cada palabra que escribo existe un corazón que te elige. Un corazón que no busca una historia perfecta, sino una historia verdadera. Una historia donde existan risas, dificultades, aprendizajes y momentos donde ambos recordemos que lo más importante siempre será tomarnos de la mano y seguir caminando juntos.
+
+</p>
+
+
+<div class="divider">
+
+❦
+
+</div>
+
+
+<p>
+
+Así termina esta página de nuestro libro por esta noche. No con una gran celebración, ni con un momento extraordinario, sino con algo mucho más valioso: la prueba de que incluso los días comunes pueden convertirse en recuerdos hermosos cuando están escritos con amor.
+
+</p>
+
+
+<p>
+
+Descansa cuando puedas, mi niña hermosa. Deja que tu cuerpo recupere fuerzas y recuerda que hay alguien que, incluso desde lejos, piensa en ti antes de dormir, que se pregunta cómo estás, que desea verte sonreír y que sueña con el día en que pueda estar a tu lado para decirte todas estas cosas mientras te abraza.
+
+</p>
+
+
+<p>
+
+Porque si este viejo libro continúa escribiéndose noche tras noche, es porque cada página tiene una razón para existir. Y esa razón eres tú.
+
+</p>
+
+
+<p style="text-align:center;">
+
+<strong>
+
+Con todo mi amor, hoy, mañana y en cada capítulo que todavía nos queda por vivir.
+
+<br><br>
+
+El hombre que siempre encontrará su hogar en tu corazón.
+
+</strong>
+
+</p>
+
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+}
+
+</style>
+
+
+<div class="book-quote">
+
+
+<p>
+
+<strong>
+
+Dicen los antiguos libros que existen amores que no se demuestran únicamente en los grandes momentos, sino en aquellos pequeños detalles que nadie más nota: en preocuparse por una comida, en desear estar presente cuando el otro está cansado y en sentir tristeza por no poder abrazar a quien más se ama. Quizá por eso esta noche merece quedar guardada entre estas páginas, porque una cena sencilla terminó revelando algo mucho más grande: que mi corazón siempre busca la manera de cuidarte. No importa si la distancia pone kilómetros entre nosotros, si los días son pesados o si aparecen momentos donde quisiera hacer más de lo que puedo; siempre habrá una parte de mí caminando a tu lado, recordándote que eres importante, que eres amada y que nunca estás sola mientras exista este amor. Y cuando el tiempo pase y volvamos a leer estas páginas, quiero que encontremos aquí la prueba de que incluso una noche cualquiera fue especial porque llevaba escrito tu nombre, mi amor, mi hogar y mi destino: 
+
+<br><br>
+
+✨ <span style="font-size:1.65rem;">VALERIA PETRO VILLAZÓN</span> ❤️
+
+</strong>
+
+</p>
+
+
+</div>
+
+
+<style>
+
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+
+border:5px solid #f2d89d;
+
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+
+transition:.35s ease;
+
+}
+
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+}
+
+
+</style>
+
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Jueves-16-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+</div>
+
+
+<div class="page-turn">
+
+
+<p class="page-turn-text">
+
+<strong>
+
+Este capítulo llega al final de esta noche, pero nuestra historia todavía conserva muchas páginas esperando ser escritas. Mañana, cuando la tinta vuelva a despertar, una nueva hoja abrirá sus puertas para seguir contando nuestro amor.
+
+</strong>
+
+
+<a href="#"
+class="page-corner">
+
+<span>
+
+✦ Pasar la página ✦
+
+</span>
+
+</a>
+
+
+</div>
+
+
+
+<div class="ribbon"></div>
+
+
+<div class="end-message">
+
+
+<strong>
+
+La tinta descansa por esta noche, pero mi corazón seguirá escribiendo tu nombre hasta el próximo capítulo. Porque mientras existamos tú y yo, este libro jamás conocerá su última página.
+
+</strong>
+
+
+</div>
 
 
 <div class="page-number">
@@ -315,52 +854,11 @@ Cada segundo nos acerca a una nueva página escrita con amor.
 
 </div>
 
+
 </div>
 
-<script>
+</div>
 
-const fechaObjetivo = new Date("2026-07-16T21:20:00");
-
-function actualizarContador(){
-
-    const ahora = new Date();
-    const diferencia = fechaObjetivo.getTime() - ahora.getTime();
-
-    if (diferencia <= 0) {
-
-        document.getElementById("countdown").innerHTML = "✦ Ya disponible ✦";
-        return;
-
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-    let texto = "";
-
-    if (dias > 0) {
-        texto += String(dias).padStart(2, "0") + "d ";
-    }
-
-    texto +=
-        String(horas).padStart(2, "0") + ":" +
-        String(minutos).padStart(2, "0") + ":" +
-        String(segundos).padStart(2, "0");
-
-    document.getElementById("countdown").textContent = texto;
-
-}
-
-actualizarContador();
-
-setInterval(actualizarContador, 1000);
-
-</script>
 
 </body>
 
